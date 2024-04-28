@@ -237,14 +237,12 @@ p{
 .team-members {
     display: flex;
     justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    width: 100%;
+    gap: 20px;
+    
 }
 
 .team-member {
-    width: 30%;
+    width: calc(33.33% - 50px); 
     margin-bottom: 50px;
     position: relative;
     overflow: hidden;
@@ -403,16 +401,57 @@ textarea {
         display: flex;
         flex-direction: column;
     }
-    .col-lg-9, .col-lg-3 {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .team-members {
-        flex-direction: column;
-        align-items: center;
+    .about {
+        grid-template-columns: 1fr; 
+        grid-gap: 30px; 
+        padding: 100px 20px; 
     }
 
-    .team-member {
-        width: 90%;
+    .gambar {
+        display: block; 
+        margin-top: 30px; 
     }
+
+    .kiri {
+        text-align: left; 
+        margin-right: 0; 
+        margin-bottom: 30px; 
+    }
+
+    img.satu {
+        width: 100%; 
+        max-width: 100%; 
+        margin-bottom: 15px; 
+    }
+
+    img.dua {
+        width: 100%;
+        max-width: 100%; 
+    }
+
+    img.tiga {
+        width: 100%; 
+        max-width: 100%; 
+    }
+    section {
+        padding: 50px 20px; 
+    }
+
+    .madison-text {
+        margin-bottom: 30px; 
+    }
+
+    #map iframe {
+        height: 200px; 
+    }
+    .team-members {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .team-member {
+        width: 100%;
+        margin-bottom: 20px;
+      }
 }
